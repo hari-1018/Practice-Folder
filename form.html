@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HTML Form Example</title>
+</head>
+<body>
+  <h2>Registration Form</h2>
+  <form action="/submit" method="post">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required><br><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required><br><br>
+
+    <label>Gender:</label>
+    <input type="radio" name="gender" value="male"> Male
+    <input type="radio" name="gender" value="female"> Female<br><br>
+
+    <label for="country">Country:</label>
+    <select id="country" name="country">
+      <option value="in">India</option>
+      <option value="us">USA</option>
+      <option value="uk">UK</option>
+    </select><br><br>
+
+    <textarea name="message" rows="4" cols="30" placeholder="Your message here..."></textarea><br><br>
+
+    <input type="submit" value="Register">
+    <input type="reset" value="Clear">
+  </form>
+</body>
+</html>

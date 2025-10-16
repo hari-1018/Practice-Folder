@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+/* Pseudo */
+/* button:hover{
+    padding: 10px;
+    background-color: brown;
+}
+
+p::first-line{
+    color: red;
+} */
+
+
+/* Combinators */
+/* div p { color: blue; }     */
+/* div > p { color: red; }     */
+/* h1 + p { color: green; }  */
+/* h1 ~ p { color: orange; } */
+
+ 
+/* Specificity */
+/* p { color: blue; }
+p.hello { color: green; }
+#main { color: red; }  
+p{
+  color: chartreuse !important;
+} */
+
+
+/* Overflow */
+/* .overflow {
+  width: 100px;
+  height: 100px;
+  border: 1px solid;
+  overflow: scroll;
+  overflow-y: hidden;
+
+} */
+
+.box {
+  width: 100px;
+  height: 100px;
+}
+
+.red {
+  background: red;
+  left: 20px;
+  top: 20px;
+  z-index: 1; 
+}
+
+.blue {
+  background: blue;
+  left: 60px;
+  top: 60px;
+  z-index: 2;  
+}
+
+.green {
+  background: green;
+  left: 100px;
+  top: 100px;
+  z-index: 3; 
+  opacity: 20%; 
+}
+
+/* #test{
+  border: 1px dotted red;
+}
+
+h1{
+  color : green;
+} */
+
+    </style>
+</head>
+<body>
+    <!-- Pseudo -->
+    <!-- <h1>Pseudo Classes & Pseudo Elements</h1>
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus temporibus quam assumenda dolor qui deserunt inventore dignissimos ex illo atque dolores, facere repellendus eligendi, soluta reprehenderit architecto, illum impedit ut.</p>
+
+    <button>Click Me</button> -->
+
+
+    <!-- Combinators -->
+    <!-- <div>
+    <h1>Heading</h1>
+    <p>Paragraph 1</p>
+    <p>Paragraph 2</p>
+    <section>
+        <p>Paragraph 3</p>
+    </section>
+    </div> -->
+
+
+
+    <!-- Specificity -->
+    <!-- <div>
+      <p id="main" style="color: blueviolet;" class="hello" >Specificity</p>
+    </div> -->
+
+    <!-- Overflow -->
+    <!-- <div class="overflow">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit dolor ut sit odio laboriosam a molestiae aspernatur! Aspernatur, ea? Voluptatum magni doloremque fugit, autem obcaecati omnis esse eveniet aperiam libero.
+    </div> -->
+
+    <!-- Z index -->
+    <div class="box red"></div>
+    <div class="box blue"></div>
+    <div class="box green"></div>
+
+
+    
+
+
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+  width: 100px;
+  height: 100px;
+  background-color: skyblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+  transition: all 0.5s ease; /* smooth animation */
+}
+
+.move:hover {
+  transform: translate(50px, 50px); /* moves right 50px and down 50px */
+}
+
+/* Rotate */
+.rotate:hover {
+  transform: rotate(45deg); /* rotates 45 degrees */
+}
+
+/* Scale */
+.scale:hover {
+  transform: scale(1.5); /
+}
+
+/* Skew */
+.skew {
+  transform: skew(20deg, 10deg);
+}
+
+.shadow-box {
+  width: 150px;
+  height: 150px;
+  background-color: lightcoral;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+  font-weight: bold;
+  color: white;
+  
+  /* Box shadow */
+  box-shadow: 10px 10px 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+    </style>
+</head>
+<body>
+
+    <div class="box move">Move</div>
+    <div class="box rotate">Rotate</div>
+    <div class="box scale">Scale</div>
+    <div class="box skew">Skew</div>
+
+
+    <div class="shadow-box">Shadow Box</div>
+
+
+
+</body>
+</html>

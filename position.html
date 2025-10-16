@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .box {
+      width: 200px;
+      height: 200px;
+      color: white;
+      font-weight: bold;
+    }
+
+    /* 1. Static */
+    .static-box {
+      position: static;
+      background-color: teal;
+    }
+
+    /* 2. Relative */
+    .relative-box {
+      position: relative;
+      top: 20px;
+      left: 40px;
+      background-color: green;
+    }
+
+    /* 3. Absolute */
+    .parent {
+      position: relative;
+      width: 400px;
+      height: 400px;
+      border: 2px dashed gray;
+      margin: 20px;
+      top:20px;
+      left:40px;
+    }
+    .absolute-box {
+      position: absolute;
+      top: 20px;
+      left: 40px;
+      background-color: purple;
+    }
+
+    /* 4. Fixed */
+    .fixed-box {
+      position: fixed;
+      top: 10px;
+      right: 100px;
+      background-color: orange;
+    }
+
+    /* 5. Sticky */
+    .sticky-box {
+      position: sticky;
+      top: 50px;
+      background-color: crimson;
+    }
+  </style>
+</head>
+<body>
+  <h2>CSS Position Examples (200px x 200px)</h2>
+
+  <!-- Static -->
+  <div class="box static-box">
+    Static
+  </div>
+
+  <!-- Relative -->
+  <div class="box relative-box">Relative</div>
+
+  <!-- Absolute inside Parent -->
+  <div class="parent">
+    Parent (Relative)
+    <div class="box absolute-box">Absolute</div>
+  </div>
+
+  <!-- Sticky -->
+  <div class="box sticky-box">Sticky</div>
+
+  <!-- Scroll content to see Sticky & Fixed effect -->
+  <p style="height:1500px;">Scroll Down ⬇ to see Sticky & Fixed Box in action</p>
+
+  <!-- Fixed -->
+  <div class="box fixed-box">Fixed</div>
+
+</body>
+</html>
